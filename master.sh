@@ -30,5 +30,6 @@ cp /srv/docker/projecte-swarm/logspout-elk/files/logstash.conf /srv/docker/logst
 docker network create proxy -d overlay
 docker network create portainer_agent -d overlay
 docker network create backend -d overlay
+docker network create consul -d overlay
 
 
