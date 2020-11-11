@@ -1,4 +1,5 @@
-#instalar docker
+#instalar docker  i git
+apt install -y git
 curl https://get.docker.com | sudo bash
 
 mkdir -p /srv/docker
