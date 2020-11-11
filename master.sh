@@ -1,4 +1,3 @@
-apt install -y git
 #instalar docker
 curl https://get.docker.com | sudo bash
 
@@ -24,7 +23,8 @@ mkdir -p /srv/docker/portainer/portainer/data
 mkdir -p /srv/docker/elasticsearch/data
 chmod 1777 /srv/docker/elasticsearch/data
 mkdir -p /srv/docker/logstash/config
-cp /srv/docker/swarm-cluster-example/logspout-elk/files/logstash.conf /srv/docker/logstash/config/
+
+cp /srv/docker/projecte-swarm/logspout-elk/files/logstash.conf /srv/docker/logstash/config/
 
 docker network create proxy -d overlay
 docker network create portainer_agent -d overlay
