@@ -16,6 +16,8 @@ services:
     networks:
       - proxy
       - portainer_agent
+    ports:
+      - $[PUBLIC_PORT}:9000
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       # - ${REMOTE_MOUNT}/portainer/portainer/data:/data

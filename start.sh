@@ -6,7 +6,7 @@ IP3=$3
 export IP1 IP2 IP3
 export REMOTE_MOUNT="/srv/docker/data"
 
-#cd /srv/docker/swarm-cluster-example
+cd /root/projecte-swarm
 docker stack deploy -c traefik/stack.yaml traefik
 docker stack deploy -c portainer/stack.yaml portainer
 docker stack deploy -c consul-cluster/stack.yaml consul-cluster
